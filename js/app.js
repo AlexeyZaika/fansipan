@@ -62,6 +62,12 @@ if (sliderMenu) {
 		}
 	}
 
+	if (window.innerWidth >= mediaQuerySize) {
+		menuSliderDestroy();
+	} else {
+		menuSliderInit();
+	}
+
 	window.addEventListener('resize', function() {
 		if (window.innerWidth >= mediaQuerySize) {
 			menuSliderDestroy();
